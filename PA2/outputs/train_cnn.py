@@ -279,7 +279,7 @@ class ConvNet(object):
 			# Allocate percentage of GPU memory to the session.
 			# If you system does not have GPU, set has_GPU = False
 			
-			has_GPU = False
+			has_GPU = True #False
 			if has_GPU:
 				gpu_option = tf.GPUOptions(per_process_gpu_memory_fraction=0.3)
 				config = tf.ConfigProto(gpu_options=gpu_option)
